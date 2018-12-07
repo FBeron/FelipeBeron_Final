@@ -5,5 +5,5 @@ hits*.pdf : plot_gauss.py
     python plot_gauss.py
     
 data*.dat : Beron_gauss.c
-    gcc -fopenmp Beron_gauss.c -o BeronGauss_c
+    gcc -o BeronGauss_c -fopenmp Beron_gauss.c -lm
     ./BeronGauss_c
